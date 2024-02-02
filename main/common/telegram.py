@@ -25,7 +25,7 @@ async def me(message: types.Message) -> None:
     a = str(message.text)
     with open(r'common\files\text.text', 'a', encoding='utf-8') as f:
         f.write(f'{a} \n')
-    await bot.send_message(5270716903, a)
+    await bot.send_message(5270716903, a) #отправляет мне текст сообщений отправленных боту
     print(a)
 
 
